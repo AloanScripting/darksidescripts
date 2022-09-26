@@ -15,15 +15,15 @@ function createElementsClassChecker() {
     classElement.id = '{{ collection.url | handle}}'
   } 
 } window.onload=createElementsClassChecker(); 
-// still not workiing
-// function createElementsIDChecker() { 
-//     const idMatcher = document.querySelectorAll(
-//   ".header__logo-link,#shopify-section-template--15302417645613__content");
-//   // Loop through all elements (including html, head, meta, scripts) and add collection.url
-//     for (const idElement of idMatcher) {
-//     idElement.classList.add('{{ page_title | handle }}') 
-//   } 
-// } window.onload=createElementsIDChecker(); 
+
+function createElementsIDChecker() { 
+    const idMatcher = document.querySelectorAll(
+  ".header__logo-link,#shopify-section-template--15302417645613__content");
+  // Loop through all elements (including html, head, meta, scripts) and add collection.url
+    for (const idElement of idMatcher) {
+    idElement.classList.add('{{ page_title | handle }}') 
+  } 
+} window.onload=createElementsIDChecker(); 
 
 function executeFancyBox() {
   const fancybox = new Fancybox([
