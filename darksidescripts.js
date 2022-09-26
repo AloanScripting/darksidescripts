@@ -5,4 +5,4 @@ function changeSportsURL() {
     for (const element of elements) {
         element.href = "https://darksidegames.com/collections/sports-cards";
     }
-} window.onload=changeSportsURL()
+} changeSportsURL()
