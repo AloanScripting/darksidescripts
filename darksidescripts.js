@@ -1,4 +1,5 @@
-//ionos hosted functions
+//DS Functions
+
 
 function changeSportsURL() {
     const elements = document.getElementsByClassName('header__logo-link sports-cards ');
