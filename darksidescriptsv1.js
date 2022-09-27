@@ -52,11 +52,10 @@ function createElementsClassChecker() {
 } 
 } 
 
+const wol = window.onload
 
-window.onload = function(){
-  changeSportsURL(),
-  executeFancyBox(),
-  createElementsIDChecker(),
-  createElementsClassChecker()
-}
 insertFancyBoxLink();
+wol = changeSportsURL();
+wol = executeFancyBox();
+wol = createElementsIDChecker()
+wol = createElementsClassChecker(); 
