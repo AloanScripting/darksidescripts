@@ -53,6 +53,15 @@ function createElementsClassChecker() {
   };
 }; 
 
+function insertSportsFavicon() {
+  if (window.location.toString().includes("/sports")){
+    let link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+    link.type = 'image/png';
+    link.rel = 'shortcut icon';
+    link.href = 'https://cdn.discordapp.com/attachments/1016787628370182144/1016787695239970827/Darkside_Sports_Logo-removebg-preview.png';
+    document.getElementsByTagName('head')[0].appendChild(link);
+};
+}  
 
 function setSportsRoot() {
   if (window.location.toString().includes("/sports")){
@@ -61,6 +70,9 @@ function setSportsRoot() {
 } 
 } window.onload = setSportsRoot();
 
+
+//execute functions 
+insertSportsFavicon();
 insertFancyBoxLink();
 
 
