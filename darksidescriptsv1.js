@@ -52,10 +52,11 @@ function createElementsClassChecker() {
 } 
 } window.onload=createElementsClassChecker(); 
 
-
+function getMySHA() {
 var git = ('git-last-commit');
 
 git.getLastCommit(function(err, commit) {
   // read commit object properties
   console.log(commit);
 });
+} window.onload =  getMySHA()
