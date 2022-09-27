@@ -73,11 +73,16 @@ function setSportsRoot() {
 
 //execute functions 
 insertSportsFavicon();
-insertFancyBoxLink();
+
+try{
+  insertFancyBoxLink();
+} catch (e) {
+  console.log(e)
+}
 
 
 window.onload = setSportsRoot();
-window.onload=changeSportsURL();
+window.onload = changeSportsURL();
 window.onload = executeFancyBox();
 window.onload = createElementsIDChecker();
 window.onload=createElementsClassChecker(); 
