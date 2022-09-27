@@ -52,12 +52,11 @@ function createElementsClassChecker() {
 } 
 } 
 
-const windowOnLoadCollection = [
+
+window.onload = function(){
   changeSportsURL(),
   executeFancyBox(),
   createElementsIDChecker(),
   createElementsClassChecker()
-]
-
-window.onload = windowOnLoadCollection
+}
 insertFancyBoxLink();
