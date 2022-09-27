@@ -17,13 +17,13 @@ function changeSportsURL() {
 };  insertFancyBoxLink();
 
 
-// function executeFancyBox() {
-//   if (window.location.href.indexOf("") > -1){
-//   const fancybox = new Fancybox([
-//     {
-//       src: "<img><h3>Discount Code:</h2><h3>Darkside10</h2><p>Valid on MTG or Pokemon singles purchases over $10.00! (Cannot be combined with store credit.)</p>",
-//       type: "html",
-//     },
-//    ])
-//   };
-// } window.onload = executeFancyBox();
+function executeFancyBox() {
+  if (window.location.href.indexOf("") > -1){
+  const fancybox = new Fancybox([
+    {
+      src: "<img><h3>Discount Code:</h2><h3>Darkside10</h2><p>Valid on MTG or Pokemon singles purchases over $10.00! (Cannot be combined with store credit.)</p>",
+      type: "html",
+    },
+   ])
+  };
+} window.onload = executeFancyBox();
