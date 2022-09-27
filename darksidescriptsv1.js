@@ -54,8 +54,17 @@ function createElementsClassChecker() {
 }; 
 
 
+function setSportsRoot() {
+  if (window.location.toString().includes("/sports")){
+  document.documentElement.style.setProperty('--color-primary', '#fbd304')
+
+} 
+} window.onload = setSportsRoot();
+
 insertFancyBoxLink();
 
+
+window.onload = setSportsRoot();
 window.onload=changeSportsURL();
 window.onload = executeFancyBox();
 window.onload = createElementsIDChecker();
