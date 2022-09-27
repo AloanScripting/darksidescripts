@@ -16,17 +16,7 @@
     link.href = 'https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css';
 };  
 
-  function insertFancyBoxScript() {
-    const fancyBoxInit = document.createElement("script");
-    fancyBoxInit.setAttribute(
-    "src",
-    'https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js'
-  );
-    fancyBoxInit.setAttribute('type', 'text/javascript');
-    fancyBoxInit.setAttribute('defer', 'defer');
-    let head = document.head;
-    head.insertBefore(fancyBoxInit, head.firstElementChild)
-  } insertFancyBoxScript();
+
 
   function executeFancyBox() {
     if (window.location.pathname.length < 2){
@@ -92,5 +82,3 @@ window.onload = changeSportsURL();
 window.onload = executeFancyBox();
 window.onload = createElementsIDChecker();
 window.onload = createElementsClassChecker(); 
-
-insertFancyBoxScript();
