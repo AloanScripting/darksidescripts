@@ -73,7 +73,7 @@ function setSportsRoot() {
 
 //execute functions 
 insertSportsFavicon();
-insertFancyBoxLink
+insertFancyBoxLink();
 
 
 window.onload = setSportsRoot();
