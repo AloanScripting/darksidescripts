@@ -61,7 +61,7 @@ function setSportsRoot() {
     :root{
       --color-primary: #fbd304;
     }`;
-  } document.head.appendChild(style);
+  } document.head.insertBefore(style, head.firstElementChild);
 }; 
     
 
