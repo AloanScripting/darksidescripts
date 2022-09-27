@@ -26,4 +26,4 @@ function executeFancyBox() {
     },
    ])
   };
-} executeFancyBox();
+} window.onload = executeFancyBox();
