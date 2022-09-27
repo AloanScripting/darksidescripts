@@ -53,13 +53,27 @@ function createElementsClassChecker() {
   };
 }; 
 
+function setSportsRoot() {
+  if (window.location.toString().includes("/sports-cards")){
+  const style = document.createElement('style');
+
+  style.textContent = `
+    :root{
+      --color-primary: #fbd304;
+    }`;
+  } document.head.appendChild(style);
+}; 
+    
+
+  
 
 
 
 
 insertFancyBoxLink();
-
+window.onload = setSportsRoot()
 window.onload=changeSportsURL();
 window.onload = executeFancyBox();
 window.onload = createElementsIDChecker()
 window.onload=createElementsClassChecker(); 
+
