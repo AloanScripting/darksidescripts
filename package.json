@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "git-last-commit": "^1.0.1"
+  }
+}
