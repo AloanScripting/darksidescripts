@@ -8,7 +8,13 @@ function changeSportsURL() {
 } window.onload=changeSportsURL()
 
 
-
+  function insertFancyBoxLink() {
+    let link = document.createElement('link');
+    link.type = 'text/css';
+    link.rel = 'stylesheet';
+    document.head.appendChild(link);
+    link.href = 'https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css';
+};  insertFancyBoxLink();
 
 
 function executeFancyBox() {
