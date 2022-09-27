@@ -73,9 +73,9 @@ function setSportsRoot() {
 
 //execute functions 
 insertSportsFavicon();
-
+insertFancyBoxLink
 try{
-  insertFancyBoxLink();
+  executeFancyBox();
 } catch (e) {
   console.log(e)
 }
