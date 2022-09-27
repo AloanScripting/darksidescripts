@@ -52,8 +52,12 @@ function createElementsClassChecker() {
 } 
 } 
 
-window.onload=changeSportsURL();
+const windowOnLoadCollection = [
+  changeSportsURL(),
+  executeFancyBox(),
+  createElementsIDChecker(),
+  createElementsClassChecker()
+]
+
+window.onload = windowOnLoadCollection
 insertFancyBoxLink();
-window.onload = executeFancyBox();
-window.onload = createElementsIDChecker()
-window.onload=createElementsClassChecker(); 
