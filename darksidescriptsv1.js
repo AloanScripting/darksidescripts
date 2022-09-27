@@ -53,25 +53,7 @@ function createElementsClassChecker() {
   };
 }; 
 
-function insertFancyBoxScript() {
-  const myScript = document.createElement("script");
 
-  myScript.setAttribute(
-  "src",
-  'https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js'
-);
-  myScript.setAttribute('type', 'text/javascript');
-  myScript.setAttribute('async', '');
-  let head = document.head;
-  head.insertBefore(myScript, head.firstElementChild)
-} insertFancyBoxScript();
-    
-
-  
-
-
-
-insertFancyBoxScript();
 insertFancyBoxLink();
 
 window.onload=changeSportsURL();
