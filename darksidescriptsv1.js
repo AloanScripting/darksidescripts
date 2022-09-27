@@ -5,7 +5,7 @@ function changeSportsURL() {
     for (const element of elements) {
         element.href = "https://darksidegames.com/collections/sports-cards";
     }
-} window.onload=changeSportsURL()
+} 
 
 
   function insertFancyBoxLink() {
@@ -14,7 +14,7 @@ function changeSportsURL() {
     link.rel = 'stylesheet';
     document.head.appendChild(link);
     link.href = 'https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css';
-};  insertFancyBoxLink();
+};  
 
 
 function executeFancyBox() {
@@ -26,7 +26,7 @@ function executeFancyBox() {
     },
    ])
   }; 
-}window.onload = executeFancyBox();
+}
  
 
 
@@ -39,7 +39,7 @@ function createElementsIDChecker() {
   for (const idElement of idMatcher) {
   idElement.classList.add(bodyID)
 } 
-} window.onload = createElementsIDChecker()
+} 
 
 
 function createElementsClassChecker() { 
@@ -50,13 +50,10 @@ function createElementsClassChecker() {
   for (const classElement of classMatcher) {
   classElement.id = htmlID
 } 
-} window.onload=createElementsClassChecker(); 
+} 
 
-function getMySHA() {
-var git = ('git-last-commit');
-
-git.getLastCommit(function(err, commit) {
-  // read commit object properties
-  console.log(commit);
-});
-} window.onload =  getMySHA()
+window.onload=changeSportsURL();
+insertFancyBoxLink();
+window.onload = executeFancyBox();
+window.onload = createElementsIDChecker()
+window.onload=createElementsClassChecker(); 
