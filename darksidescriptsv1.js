@@ -25,5 +25,7 @@ function executeFancyBox() {
       type: "html",
     },
    ])
+  } else {
+    console.log("do nothing")
   };
 } window.onload = executeFancyBox();
