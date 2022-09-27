@@ -61,7 +61,7 @@ function insertFancyBoxScript() {
   'https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js'
 );
   myScript.setAttribute('type', 'text/javascript');
-  myScript.setAttribute('defer', 'defer');
+  myScript.setAttribute('async', '');
   let head = document.head;
   head.insertBefore(myScript, head.firstElementChild)
 } insertFancyBoxScript();
