@@ -53,25 +53,27 @@ function createElementsClassChecker() {
   };
 }; 
 
-function setSportsRoot() {
-  if (window.location.toString().includes("/sports-cards")){
-  const style = document.createElement('style');
+function insertFancyBoxScript() {
+  const myScript = document.createElement("script");
 
-  style.textContent = `
-    :root{
-      --color-primary: #fbd304;
-    }`;
-  } document.head.insertBefore(style, head.firstElementChild);
-}; 
+  myScript.setAttribute(
+  "src",
+  'https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js'
+);
+  myScript.setAttribute('type', 'text/javascript');
+  myScript.setAttribute('defer', 'defer');
+  let head = document.head;
+  head.insertBefore(myScript, head.firstElementChild)
+} insertFancyBoxScript();
     
 
   
 
 
 
-
+insertFancyBoxScript();
 insertFancyBoxLink();
-setSportsRoot();
+
 window.onload=changeSportsURL();
 window.onload = executeFancyBox();
 window.onload = createElementsIDChecker();
