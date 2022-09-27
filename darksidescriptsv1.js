@@ -53,7 +53,7 @@ function createElementsClassChecker() {
 } window.onload=createElementsClassChecker(); 
 
 
-var git = require('git-last-commit');
+var git = ('git-last-commit');
 
 git.getLastCommit(function(err, commit) {
   // read commit object properties
