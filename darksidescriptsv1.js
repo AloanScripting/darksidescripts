@@ -57,7 +57,5 @@ function createElementsClassChecker() {
 } 
 } window.onload=createElementsClassChecker(); 
 
-function insertFancyApps(){
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-}
+
 
