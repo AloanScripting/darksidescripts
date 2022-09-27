@@ -18,7 +18,7 @@ function changeSportsURL() {
 
 
 function executeFancyBox() {
-  if (window.location.href.indexOf("/") > -1){
+  if (window.location.pathname.length < 2){
   const fancybox = new Fancybox([
     {
       src: "<img><h3>Discount Code:</h2><h3>Darkside10</h2><p>Valid on MTG or Pokemon singles purchases over $10.00! (Cannot be combined with store credit.)</p>",
