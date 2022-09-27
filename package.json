@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "git-last-commit": "^1.0.1"
+    "git-last-commit": "^1.0.1",
+    "requirejs": "^2.3.6"
   }
 }
