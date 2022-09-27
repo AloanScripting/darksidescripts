@@ -24,14 +24,15 @@ function executeFancyBox() {
   myScript.setAttribute("src", 'https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js')
   let head = document.head;
   head.insertBefore(myScript, head.firstElementChild)
- }
+
   const fancybox = new Fancybox([
     {
       src: "<img><h3>Discount Code:</h2><h3>Darkside10</h2><p>Valid on MTG or Pokemon singles purchases over $10.00! (Cannot be combined with store credit.)</p>",
       type: "html",
     },
    ])
-  };window.onload = executeFancyBox();
+  }; 
+}window.onload = executeFancyBox();
  
 
 
