@@ -52,7 +52,7 @@ function createElementsClassChecker() {
 } 
 } 
 
-const wol = window.onload
+let wol = window.onload
 
 insertFancyBoxLink();
 wol = changeSportsURL();
