@@ -76,7 +76,6 @@ function changeProductPageStyles() {
 
   document.querySelectorAll('p.collection-title-aloanscripting').forEach(el => {
     if(hasDarksideSportsText(el, "Darkside Sports") == true) {
-      console.log('true')
       document.documentElement.style.setProperty('--color-primary', '#fbd304');
       //this needs updated, probably best to load a new css file
     const navBarInner =  document.getElementsByClassName(".nav-bar__inner")
@@ -93,9 +92,7 @@ function changeProductPageStyles() {
     for (const element of elements) {
         element.href = "https://darksidegames.com/collections/sports-cards";
       };
-    }else {
-    console.log("not true");
-      };
+    };
   })
 }; 
 
