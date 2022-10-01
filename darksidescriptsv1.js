@@ -71,6 +71,33 @@ function setSportsRoot() {
 } 
 } window.onload = setSportsRoot();
 
+function changeProductPageStyles() {
+  const hasDarksideSportsText = (el, text) => el.textContent.includes(text);
+
+  document.querySelectorAll('p.collection-title-aloanscripting').forEach(el => {
+    if(hasDarksideSportsText(el, "Darkside Sports") == true) {
+      console.log('true')
+      document.documentElement.style.setProperty('--color-primary', '#fbd304');
+      //this needs updated, probably best to load a new css file
+    const navBarInner =  document.getElementsByClassName(".nav-bar__inner")
+    document.getElementsByTagName('html')[0].setAttribute('id', 'collections-sports-cards')
+    
+      
+    let link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+    link.type = 'image/png';
+    link.rel = 'shortcut icon';
+    link.href = 'https://cdn.discordapp.com/attachments/1016787628370182144/1016787695239970827/Darkside_Sports_Logo-removebg-preview.png';
+    document.getElementsByTagName('head')[0].appendChild(link);
+
+    const elements = document.getElementsByClassName('header__logo-link');
+    for (const element of elements) {
+        element.href = "https://darksidegames.com/collections/sports-cards";
+      };
+    }else {
+    console.log("not true");
+      };
+  })
+}; 
 
 //execute functions 
 insertSportsFavicon();
@@ -82,3 +109,5 @@ window.onload = changeSportsURL();
 window.onload = executeFancyBox();
 window.onload = createElementsIDChecker();
 window.onload = createElementsClassChecker(); 
+
+document.ready = changeProductPageStyles();
