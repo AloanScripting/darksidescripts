@@ -111,4 +111,3 @@ window.onload = createElementsIDChecker();
 window.onload = createElementsClassChecker(); 
 
 document.ready = changeProductPageStyles();
-
