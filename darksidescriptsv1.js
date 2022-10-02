@@ -125,4 +125,4 @@ document.ready = changeProductPageStyles();
 
 //This is a temporary solution to make default title go away on items that contain the value. 
 //replaced with product title. need to be at bottom of code base
-window.onload = swapDefaultTitle()
+swapDefaultTitle()
