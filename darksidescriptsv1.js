@@ -96,6 +96,20 @@ function changeProductPageStyles() {
   })
 }; 
 
+function swapDefaultTitle(){
+  const productsRef = "darksidegames.com/products"
+  const collectionsRef = "darksidegames.com/collections"
+  if (window.location.toString().includes( productsRef ) || window.location.toString().includes( collectionsRef )){
+  const titleGet = document.querySelector('.product-meta h1').firstChild.nodeValue;
+  const pTag = document.querySelectorAll('p');
+  pTag.forEach(function(p) {
+  p.innerHTML = p.innerHTML.replace('Default Title -',  titleGet + ' -');
+    })
+  };
+} 
+
+
+
 //execute functions 
 insertSportsFavicon();
 insertFancyBoxLink();
@@ -108,3 +122,7 @@ window.onload = createElementsIDChecker();
 window.onload = createElementsClassChecker(); 
 
 document.ready = changeProductPageStyles();
+
+//This is a temporary solution to make default title go away on items that contain the value. 
+//replaced with product title. need to be at bottom of code base
+window.onload = swapDefaultTitle()
