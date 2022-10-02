@@ -89,11 +89,11 @@ document.querySelectorAll('p.collection-title-aloanscripting').forEach(el => {
   document.getElementsByTagName('head')[0].appendChild(link);
 
   const elements = document.getElementsByClassName('header__logo-link');
-  for (const element of elements) {
-      element.href = "https://darksidegames.com/collections/sports-cards";
+    for (const element of elements) {
+        element.href = "https://darksidegames.com/collections/sports-cards";
+      };
     };
-  };
-})
+  })
 }; 
 
 
