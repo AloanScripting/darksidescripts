@@ -101,12 +101,12 @@ document.querySelectorAll('p.collection-title-aloanscripting').forEach(el => {
 
 //execute functions 
 insertSportsFavicon();
-insertFancyBoxLink();
+
 
 
 window.onload = setSportsRoot();
 window.onload = changeSportsURL();
-
+window.onload = executeFancyBox();
 window.onload = createElementsIDChecker();
 window.onload = createElementsClassChecker(); 
 
