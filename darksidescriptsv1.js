@@ -24,10 +24,10 @@ function executeFancyBox() {
   {
     src: "<img><h3>Discount Code:</h2><h3>Darkside10</h2><p>Valid on MTG or Pokemon singles purchases over $10.00! (Cannot be combined with store credit.)</p>",
     type: "html",
-  },
- ])
-}; 
-}
+    },
+   ])
+  }; 
+};
 
 
 
@@ -40,8 +40,8 @@ const idMatcher = document.querySelectorAll(
 // Loop through all elements (including html, head, meta, scripts) and add collection.url
 for (const idElement of idMatcher) {
   idElement.classList.add(bodyID)
-}; 
-} ;
+  }; 
+};
 
 
 function createElementsClassChecker() { 
@@ -51,7 +51,7 @@ function createElementsClassChecker() {
   // Loop through all elements (including html, head, meta, scripts) and add collection.url
   for (const classElement of classMatcher) {
   classElement.id = htmlID
-};
+  };
 }; 
 
 function insertSportsFavicon() {
@@ -106,7 +106,7 @@ insertFancyBoxLink();
 
 window.onload = setSportsRoot();
 window.onload = changeSportsURL();
-window.onload = executeFancyBox();
+
 window.onload = createElementsIDChecker();
 window.onload = createElementsClassChecker(); 
 
