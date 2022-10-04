@@ -101,7 +101,7 @@ document.querySelectorAll('p.collection-title-aloanscripting').forEach(el => {
 
 //execute functions 
 insertSportsFavicon();
-
+insertFancyBoxLink();
 
 
 window.onload = setSportsRoot();
