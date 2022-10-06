@@ -8,26 +8,26 @@ function changeSportsURL() {
 } 
 
 
-function insertFancyBoxLink() {
-  let link = document.createElement('link');
-  link.type = 'text/css';
-  link.rel = 'stylesheet';
-  document.head.appendChild(link);
-  link.href = 'https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css';
-};  
+// function insertFancyBoxLink() {
+//   let link = document.createElement('link');
+//   link.type = 'text/css';
+//   link.rel = 'stylesheet';
+//   document.head.appendChild(link);
+//   link.href = 'https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css';
+// };  
 
 
 
-function executeFancyBox() {
-  if (window.location.pathname.length < 2){
-  const fancybox = new Fancybox([
-  {
-    src: "<img><h3>Sign Up For Our Newsletter!</h2><p>Enter your email above and you will be subscribed to our newsletter, which includes monthly discount codes, the latest Darkside news and much more!</p>",
-    type: "html",
-    },
-   ])
-  }; 
-};
+// function executeFancyBox() {
+//   if (window.location.pathname.length < 2){
+//   const fancybox = new Fancybox([
+//   {
+//     src: "<img><h3>Sign Up For Our Newsletter!</h2><p>Enter your email above and you will be subscribed to our newsletter, which includes monthly discount codes, the latest Darkside news and much more!</p>",
+//     type: "html",
+//     },
+//    ])
+//   }; 
+// };
 
 
 
@@ -101,12 +101,12 @@ document.querySelectorAll('p.collection-title-aloanscripting').forEach(el => {
 
 //execute functions 
 insertSportsFavicon();
-insertFancyBoxLink();
+// insertFancyBoxLink();
 
 
 window.onload = setSportsRoot();
 window.onload = changeSportsURL();
-window.onload = executeFancyBox();
+// window.onload = executeFancyBox();
 window.onload = createElementsIDChecker();
 window.onload = createElementsClassChecker(); 
 
