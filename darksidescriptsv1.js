@@ -22,7 +22,7 @@ function executeFancyBox() {
   if (window.location.pathname.length < 2){
   const fancybox = new Fancybox([
   {
-    src: "<img><h3>Discount Code:</h2><h3>Darkside10</h2><p>Valid on MTG or Pokemon singles purchases over $10.00! (Cannot be combined with store credit.)</p>",
+    src: "<img><h3>Sign Up For Our Newsletter!</h2><p>Enter your email above and you will be subscribed to our newsletter, which includes monthly discount codes, the latest Darkside news and much more!</p>",
     type: "html",
     },
    ])
