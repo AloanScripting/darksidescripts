@@ -65,7 +65,7 @@ if (window.location.toString().includes("/sports")){
 }  
 
 function setSportsRoot() {
-if (window.location.toString().includes("/sports")){
+if (window.location.toString().includes("sports")){
 document.documentElement.style.setProperty('--color-primary', '#fbd304')
 
 } 
