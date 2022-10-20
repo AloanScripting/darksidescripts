@@ -1,9 +1,25 @@
 //DS Functions
 
-function changeSportsURL() {
-  const elements = document.getElementsByClassName('header__logo-link sports-cards ');
+//change mailchimp button if sports url 
+$( document ).ready(function(){
+  var darksideSportsUrl = $(location).attr('href');
+  if(darksideSportsUrl.indexOf('sports') != -1){
+    $('#mc_embed_signup_scroll > div:nth-child(7) > input').css({'background' : 'linear-gradient(90deg, rgba(251,211,4,1) 0%, rgba(252,222,63,1) 35%, rgba(255,255,255,1) 100%)', 'color' : '#000000'}),$('.header__logo-link').attr('href', 'https://darksidegames.com/pages/darkside-sports'), $('.header__cart-count').css('color','#000000'), $('.header__logo-image').attr('src','https://cdn.discordapp.com/attachments/1016787628370182144/1016787695239970827/Darkside_Sports_Logo-removebg-preview.png'), document.documentElement.style.setProperty('--color-primary', '#fbd304');
+  }
+})
+
+function changeSportsURL2() {
+  const elements = document.getElementsByClassName('header__logo-link');
   for (const element of elements) {
-      element.href = "https://darksidegames.com/collections/sports-cards";
+      element.href = "https://darksidegames.com/pages/darkside-sports";
+  }
+} 
+
+
+function changeSportsURL() {
+  const elements = document.getElementsByClassName('header__logo-link sports-cards');
+  for (const element of elements) {
+      element.href = "https://darksidegames.com/pages/darkside-sports";
   }
 } 
 
@@ -64,12 +80,12 @@ if (window.location.toString().includes("sports")){
 };
 }  
 
-function setSportsRoot() {
-if (window.location.toString().includes("sports")){
-document.documentElement.style.setProperty('--color-primary', '#fbd304')
+// function setSportsRoot() {
+// if (window.location.toString().includes("sports")){
+// document.documentElement.style.setProperty('--color-primary', '#fbd304')
 
-} 
-} window.onload = setSportsRoot();
+// } 
+// } window.onload = setSportsRoot();
 
 function changeProductPageStyles() {
 const hasDarksideSportsText = (el, text) => el.textContent.includes(text);
@@ -104,7 +120,7 @@ insertSportsFavicon();
 // insertFancyBoxLink();
 
 
-window.onload = setSportsRoot();
+// window.onload = setSportsRoot();
 window.onload = changeSportsURL();
 // window.onload = executeFancyBox();
 window.onload = createElementsIDChecker();
