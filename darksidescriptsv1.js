@@ -55,7 +55,7 @@ function createElementsClassChecker() {
 }; 
 
 function insertSportsFavicon() {
-if (window.location.toString().includes("/sports")){
+if (window.location.toString().includes("sports")){
   let link = document.querySelector("link[rel*='icon']") || document.createElement('link');
   link.type = 'image/png';
   link.rel = 'shortcut icon';
