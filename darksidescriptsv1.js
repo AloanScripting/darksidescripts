@@ -1,27 +1,45 @@
 //DS Functions
 
-//change mailchimp button if sports url 
+//change everything if sports in url 
 $( document ).ready(function(){
-  var darksideSportsUrl = $(location).attr('href');
+  $('html').attr( 'id', "collections-sports-cards");
+})
+
+$( document ).ready(function(){
+  $('html').attr( 'id', "collections-sports-cards" );
+  let darksideSportsUrl = $(location).attr('href');
+  let existingStyles = $("#header_customer_login > button").attr("style");
+  const sportsUrlElement = document.getElementsByClassName('header__logo-link sports-cards');
   if(darksideSportsUrl.indexOf('sports') != -1){
-    $('#mc_embed_signup_scroll > div:nth-child(7) > input').css({'background' : 'linear-gradient(90deg, rgba(251,211,4,1) 0%, rgba(252,222,63,1) 35%, rgba(255,255,255,1) 100%)', 'color' : '#000000'}),$('.header__logo-link').attr('href', 'https://darksidegames.com/pages/darkside-sports'), $('.header__cart-count').css('color','#000000'), $('.header__logo-image').attr('src','https://cdn.discordapp.com/attachments/1016787628370182144/1016787695239970827/Darkside_Sports_Logo-removebg-preview.png'), document.documentElement.style.setProperty('--color-primary', '#fbd304');
+    $(".button").removeAttr("style"),
+    $(".button").attr('style', 'color:#000000 !important'),
+    $('#mc_embed_signup_scroll > div:nth-child(7) > input').css({
+      'background' : 'linear-gradient(90deg, rgba(251,211,4,1) 0%, rgba(252,222,63,1) 35%, rgba(255,255,255,1) 100%)', 'color' : '#000000'
+    }),
+    $('.header__logo-link').attr('href', 'https://darksidegames.com/pages/darkside-sports'), 
+    $('.header__cart-count').css('color','#000000'), $('.header__logo-image').attr('src','https://cdn.discordapp.com/attachments/1016787628370182144/1016787695239970827/Darkside_Sports_Logo-removebg-preview.png'), 
+    $('.button').css({'background' : 'linear-gradient(90deg, rgba(251,211,4,1) 0%, rgba(252,222,63,1) 35%, rgba(255,255,255,1) 100%)'}),
+
+    $('#shopify-section-template--15413602517037__fc0bebeb-c524-4482-8b12-b2e477258643 .button').css({
+      'background' : 'linear-gradient(90deg, rgba(251,211,4,1) 0%, rgba(252,222,63,1) 35%, rgba(255,255,255,1) 100%)', 'color' : '#000000'
+    }),
+    $('.header__logo-link').attr('href','https://darksidegames.com/pages/darkside-sports'),
+    $('#shopify-section-header-3 > section > header > div > div > div.header__action-list > div.header__action-item.header__action-item--account > div > a.header__action-item-link.hidden-pocket.hidden-lap').css('href','https://darksidegames.com/pages/darkside-sports'),
+    document.documentElement.style.setProperty('--color-primary', '#fbd304');
   }
 })
 
-function changeSportsURL2() {
-  const elements = document.getElementsByClassName('header__logo-link');
-  for (const element of elements) {
-      element.href = "https://darksidegames.com/pages/darkside-sports";
-  }
-} 
+$( document ).ready(function(){
+  $('#shopify-section-header-3 > section > nav > div > div > div > ul > li:nth-child(3) > a').text('Darkside Sports').attr('href', "/pages/darkside-sports");
+})
 
-
-function changeSportsURL() {
-  const elements = document.getElementsByClassName('header__logo-link sports-cards');
-  for (const element of elements) {
-      element.href = "https://darksidegames.com/pages/darkside-sports";
-  }
-} 
+//replaced with above
+// function changeSportsURL() {
+//   const sportsUrlElement = document.getElementsByClassName('header__logo-link sports-cards');
+//   for (const element of sportsUrlElement) {
+//       element.href = "https://darksidegames.com/pages/darkside-sports";
+//   }
+// }
 
 
 // function insertFancyBoxLink() {
@@ -121,7 +139,7 @@ insertSportsFavicon();
 
 
 // window.onload = setSportsRoot();
-window.onload = changeSportsURL();
+// window.onload = changeSportsURL();
 // window.onload = executeFancyBox();
 window.onload = createElementsIDChecker();
 window.onload = createElementsClassChecker(); 
