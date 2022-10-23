@@ -26,7 +26,7 @@
 $(document).ready(function() {
 if ($('html').attr('id') == 'collections-sports-cards' ) {
   const sportsURLParamerator = new URL(window.location.href);
-  sportsURLParamerator.searchParams.set('param1', 'sports');
+  sportsURLParamerator.searchParams.set('aloanscripting-param-setter', 'sports');
   sportsURLParamerator.searchParams.delete('param2');
   window.history.replaceState(null, null, sportsURLParamerator);
   }
@@ -49,7 +49,7 @@ $(document).ready(function() {
     }),
     $('.header__logo-link').attr('href', 'https://darksidegames.com/pages/darkside-sports'), 
     $('.header__cart-count').css('color','#000000'), 
-    // $('.header__logo-image').attr('src','https://cdn.discordapp.com/attachments/1016787628370182144/1016787695239970827/Darkside_Sports_Logo-removebg-preview.png'), 
+    $('.header__logo-image').attr('src','https://cdn.discordapp.com/attachments/1016787628370182144/1016787695239970827/Darkside_Sports_Logo-removebg-preview.png'), 
     $('#collections-sports-cards.header__logo-image').attr('src','https://cdn.discordapp.com/attachments/1016787628370182144/1016787695239970827/Darkside_Sports_Logo-removebg-preview.png'),
     $('.button').css({'background' : 'linear-gradient(90deg, rgba(251,211,4,1) 0%, rgba(252,222,63,1) 35%, rgba(255,255,255,1) 100%)'}),
 
