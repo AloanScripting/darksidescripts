@@ -66,9 +66,9 @@ $(document).ready(function() {
     $('#shopify-section-footer-3 > footer > div > div > aside > div.footer__aside-item.footer__aside-item--social > ul > li:nth-child(2) > a').attr('href', 'https://twitter.com/DSSportsCardsLV'),
     $('#shopify-section-footer-3 > footer > div > div > aside > div.footer__aside-item.footer__aside-item--social > ul > li:nth-child(5) > a').attr('href', 'https://www.instagram.com/darksidesportslv/'),
     // desktop header socialhref swaps
-    $('#collections-sports-cards > div > div > div > ul > li:nth-child(1) > a').attr('href', 'https://www.facebook.com/profile.php?id=100086481124219'),
-    $('#collections-sports-cards > div > div > div > ul > li:nth-child(2) > a').attr('href', 'https://twitter.com/DSSportsCardsLV'),
-    $('#collections-sports-cards > div > div > div > ul > li:nth-child(5) > a').attr('href', 'https://www.instagram.com/darksidesportslv/'),
+    $('#collections-sports-cards > div > div > div > ul.m-socialIcons > li:nth-child(1) > a').attr('href', 'https://www.facebook.com/profile.php?id=100086481124219'),
+    $('#collections-sports-cards > div > div > div > ul.m-socialIcons > li:nth-child(2) > a').attr('href', 'https://twitter.com/DSSportsCardsLV'),
+    $('#collections-sports-cards > div > div > div > ul.m-socialIcons > li:nth-child(5) > a').attr('href', 'https://www.instagram.com/darksidesportslv/'),
 
 
     //this changes navigation image. test src below, figure out what darkside wants this to be.
