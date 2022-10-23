@@ -6,28 +6,22 @@ let darksideSportsUrl = $(location).attr('href');
 
 
 //change HTML ID if sports. this shoots to collection-sports-cards for CSS purposes
-// (function($) {
-//   if(darksideSportsUrl.indexOf('sports') != -1 ||  ('p.collection-title-aloanscripting:contains("Darkside Sports")').length > 0) {
-//   $('html').attr( 'id', "collections-sports-cards");
-//   }
-// })(jQuery);
 
-
-// (function($) {
-//   if(darksideSportsUrl.indexOf('sports') != -1 ||  ('p.collection-title-aloanscripting:contains("Darkside Sports")').length > 0) {
-//   $('html').attr( 'id', "collections-sports-cards");
-//   }
-// })(jQuery);
-//change store hours if sports
 (function($) {
   if(darksideSportsUrl.indexOf('sports') != -1 ||  ('p.collection-title-aloanscripting:contains("Darkside Sports")').length > 0) {
-  $('#block-42ca0212-5d2d-4cd3-90cb-a1fe57e3e30b > div > div > p').contents().filter(function() {
-    return this.nodeType == 3
-  }).each(function(){
-    this.textContent = this.textContent.replace('9AM–9PM','10AM-7PM'),this.textContent = this.textContent.replace('9AM–12AM','10AM-7PM');
-  })
-};
+  $('html').attr( 'id', "collections-sports-cards");
+  }
 })(jQuery);
+//change store hours if sports
+// $( document ).ready(function($) {
+//   if(darksideSportsUrl.indexOf('sports') != -1 ||  ('p.collection-title-aloanscripting:contains("Darkside Sports")').length > 0) {
+//   $('#block-42ca0212-5d2d-4cd3-90cb-a1fe57e3e30b > div > div > p').contents().filter(function() {
+//     return this.nodeType == 3
+//   }).each(function(){
+//     this.textContent = this.textContent.replace('9AM–9PM','10AM-7PM'),this.textContent = this.textContent.replace('9AM–12AM','10AM-7PM');
+//   });
+// };
+// })
 //element swaps if sports in url
 $( document ).ready(function(){
   let existingStyles = $("#header_customer_login > button").attr("style");
@@ -55,6 +49,11 @@ $( document ).ready(function(){
     $('.product__refund-policy-link').css('background','#60fbd304'), 
     //this changes navigation image. test src below, figure out what darkside wants this to be.
     // $('#desktop-menu-0-2 > div > div > a > div > div > img').attr('src','https://cdn.shopify.com/s/files/1/0375/3587/5117/products/DSC00090_800x.jpg?v=1663208001'),
+    $('#block-42ca0212-5d2d-4cd3-90cb-a1fe57e3e30b > div > div > p').contents().filter(function() {
+      return this.nodeType == 3
+    }).each(function(){
+      this.textContent = this.textContent.replace('9AM–9PM','10AM-7PM'),this.textContent = this.textContent.replace('9AM–12AM','10AM-7PM');
+    }),
     document.documentElement.style.setProperty('--color-primary', '#fbd304');
   }
 })
