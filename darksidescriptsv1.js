@@ -23,12 +23,13 @@
 })(jQuery);
 
 
-//search page sports
+//search page sports for param setter
 (function($) {
-  if($('.productCard__card ').attr('data','Sports')) {
+  if(darksideSportsUrl.indexOf('search?page') != -1){
+  if($('.productCard__card ').data('producttype','Sports')) {
   $('html').attr( 'id', "collections-sports-cards");
   }
-})(jQuery);
+}})(jQuery);
 
 //param setter
 $(document).ready(function() {
