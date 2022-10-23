@@ -26,6 +26,8 @@
 
 //element swaps if sports in url
 $(document).ready(function() {
+  var url = document.location.href+"&-sports-param";
+  document.location = url;
   let darksideSportsUrl = $(location).attr('href');
   let existingStyles = $("#header_customer_login > button").attr("style");
   // const sportsUrlElement = document.getElementsByClassName('header__logo-link sports-cards');
