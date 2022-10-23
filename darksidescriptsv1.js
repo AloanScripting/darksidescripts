@@ -25,11 +25,10 @@
 
 //search page sports for param setter
 (function($) {
-  if(darksideSportsUrl.indexOf('search?page') != -1){
-  if($('.productCard__card ').data('producttype','Sports')) {
+  if(darksideSportsUrl.indexOf('search?page') != -1 && ($('.productCard__card ').data('producttype','Sports'))) {
   $('html').attr( 'id', "collections-sports-cards");
   }
-}})(jQuery);
+})(jQuery);
 
 //param setter
 $(document).ready(function() {
