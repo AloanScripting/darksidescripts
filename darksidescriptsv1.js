@@ -8,13 +8,13 @@ let darksideSportsUrl = $(location).attr('href');
 //change HTML ID if sports. this shoots to collection-sports-cards for CSS purposes
 
 (function($) {
-  if(darksideSportsUrl.indexOf('sports') != -1 ||  ('p.collection-title-aloanscripting:contains("Darkside Sports")').length > 0) {
+  if(darksideSportsUrl.indexOf('sports') != -1) {
   $('html').attr( 'id', "collections-sports-cards");
   }
 })(jQuery);
 // change store hours if sports
 $( document ).ready(function($) {
-  if(darksideSportsUrl.indexOf('sports') != -1 ||  ('p.collection-title-aloanscripting:contains("Darkside Sports")').length > 0) {
+  if(darksideSportsUrl.indexOf('sports') != -1) {
   $('#block-42ca0212-5d2d-4cd3-90cb-a1fe57e3e30b > div > div > p').contents().filter(function() {
     return this.nodeType == 3
   }).each(function(){
