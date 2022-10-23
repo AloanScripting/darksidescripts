@@ -2,7 +2,7 @@
 
 //change everything if sports in url 
 (function($) {
-  $('html').attr( 'id', "collections-sports-cards2");
+  $('html').attr( 'id', "collections-sports-cards");
 })(jQuery);
 
 (function($){
