@@ -61,9 +61,20 @@ $(document).ready(function() {
     $('.link--accented').css('color','#fbd304'),
     $('.footer__title').css('color','#fbd304'), 
     $('.product__refund-policy-link').css('background','#60fbd304'), 
+    //footer social href swaps
+    $('#shopify-section-footer-3 > footer > div > div > aside > div.footer__aside-item.footer__aside-item--social > ul > li:nth-child(1) > a').attr('href', 'https://www.facebook.com/profile.php?id=100086481124219'),
+    $('#shopify-section-footer-3 > footer > div > div > aside > div.footer__aside-item.footer__aside-item--social > ul > li:nth-child(2) > a').attr('href', 'https://twitter.com/DSSportsCardsLV'),
+    $('#shopify-section-footer-3 > footer > div > div > aside > div.footer__aside-item.footer__aside-item--social > ul > li:nth-child(5) > a').attr('href', 'https://www.instagram.com/darksidesportslv/'),
+    // desktop header socialhref swaps
+    $('#collections-sports-cards > div > div > div > ul > li:nth-child(1) > a').attr('href', 'https://www.facebook.com/profile.php?id=100086481124219'),
+    $('#collections-sports-cards > div > div > div > ul > li:nth-child(2) > a').attr('href', 'https://twitter.com/DSSportsCardsLV'),
+    $('#collections-sports-cards > div > div > div > ul > li:nth-child(5) > a').attr('href', 'https://www.instagram.com/darksidesportslv/'),
+
+
     //this changes navigation image. test src below, figure out what darkside wants this to be.
     // $('#desktop-menu-0-2 > div > div > a > div > div > img').attr('src','https://cdn.shopify.com/s/files/1/0375/3587/5117/products/DSC00090_800x.jpg?v=1663208001'),
     //change sports time 
+
     $('#block-42ca0212-5d2d-4cd3-90cb-a1fe57e3e30b > div > div > p').contents().filter(function() {
       return this.nodeType == 3
     }).each(function(){
