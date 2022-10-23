@@ -1,9 +1,13 @@
 //DS Functions
 
 //change everything if sports in url 
-$( document ).ready(function(){
-  $('html').attr( 'id', "collections-sports-cards");
-})
+(function($) {
+  $('html').attr( 'id', "collections-sports-cards2");
+})(jQuery);
+
+(function($){
+  $('#shopify-section-header-3 > section > nav > div > div > div > ul > li:nth-child(3) > a').text('Darkside Sports').attr('href', "/pages/darkside-sports");
+})(jQuery);
 
 $( document ).ready(function(){
   $('html').attr( 'id', "collections-sports-cards" );
@@ -29,9 +33,7 @@ $( document ).ready(function(){
   }
 })
 
-$( document ).ready(function(){
-  $('#shopify-section-header-3 > section > nav > div > div > div > ul > li:nth-child(3) > a').text('Darkside Sports').attr('href', "/pages/darkside-sports");
-})
+
 
 //replaced with above
 // function changeSportsURL() {
