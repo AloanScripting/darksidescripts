@@ -2,24 +2,27 @@
 
 
 
-const  darksideSportsUrl = $(location).attr('href');
+
 
 
 //change HTML ID if sports. this shoots to collection-sports-cards for CSS purposes
 (function($) {
+  var darksideSportsUrl = $(location).attr('href');
   if(darksideSportsUrl.indexOf('sports') != -1 ||  ('p.collection-title-aloanscripting:contains("Darkside Sports")').length > 0) {
   $('html').attr( 'id', "collections-sports-cards");
   }
 })(jQuery);
 
+
+(function($) {
+  var darksideSportsUrl = $(location).attr('href');
+  if(darksideSportsUrl.indexOf('sports') != -1 ||  ('p.collection-title-aloanscripting:contains("Darkside Sports")').length > 0) {
+  $('html').attr( 'id', "collections-sports-cards");
+  }
+})(jQuery);
 //change store hours if sports
 (function($) {
-  if(darksideSportsUrl.indexOf('sports') != -1 ||  ('p.collection-title-aloanscripting:contains("Darkside Sports")').length > 0) {
-  $('html').attr( 'id', "collections-sports-cards");
-  }
-})(jQuery);
-
-(function($) {
+  var darksideSportsUrl = $(location).attr('href');
   if(darksideSportsUrl.indexOf('sports') != -1 ||  ('p.collection-title-aloanscripting:contains("Darkside Sports")').length > 0) {
   $('#block-42ca0212-5d2d-4cd3-90cb-a1fe57e3e30b > div > div > p').contents().filter(function() {
     return this.nodeType == 3
@@ -30,6 +33,7 @@ const  darksideSportsUrl = $(location).attr('href');
 })(jQuery);
 //element swaps if sports in url
 $( document ).ready(function(){
+  var darksideSportsUrl = $(location).attr('href');
   let existingStyles = $("#header_customer_login > button").attr("style");
   const sportsUrlElement = document.getElementsByClassName('header__logo-link sports-cards');
   if(darksideSportsUrl.indexOf('sports') != -1 ||  ('p.collection-title-aloanscripting:contains("Darkside Sports")').length > 0) 
