@@ -50,7 +50,9 @@ $(document).ready(function() {
   // const sportsUrlElement = document.getElementsByClassName('header__logo-link sports-cards');
   if(darksideSportsUrl.indexOf('sports') != -1)
 
-  {$("#collections-sports-cards.header__logo-image").removeAttr("src"),
+  {
+    $("#shopify-section-page-intro > section > nav > ol > li:nth-child(1) > a").removeAttr("href"),
+    $("#collections-sports-cards.header__logo-image").removeAttr("src"),
     $(".button").removeAttr("style"),
     $(".button").attr('style', 'color:#000000 !important'),
     $('#mc_embed_signup_scroll > div:nth-child(7) > input').css({
@@ -69,7 +71,8 @@ $(document).ready(function() {
     $('#shopify-section-header-3 > section > header > div > div > div.header__action-list > div.header__action-item.header__action-item--account > div > a.header__action-item-link.hidden-pocket.hidden-lap').css('href','https://darksidegames.com/pages/darkside-sports'),
     $('.link--accented').css('color','#fbd304'),
     $('.footer__title').css('color','#fbd304'), 
-    $('.product__refund-policy-link').css('background','#60fbd304'), 
+    $('.product__refund-policy-link').css('background','#60fbd304'),
+    $('#shopify-section-page-intro > section > nav > ol > li:nth-child(1) > a').attr('href', 'https://darksidegames.com/pages/darkside-sports'), 
     //footer social href swaps
     $('#shopify-section-footer-3 > footer > div > div > aside > div.footer__aside-item.footer__aside-item--social > ul > li:nth-child(1) > a').attr('href', 'https://www.facebook.com/profile.php?id=100086481124219'),
     $('#shopify-section-footer-3 > footer > div > div > aside > div.footer__aside-item.footer__aside-item--social > ul > li:nth-child(2) > a').attr('href', 'https://twitter.com/DSSportsCardsLV'),
