@@ -10,7 +10,6 @@
 })(jQuery);
 
 $( document ).ready(function(){
-  $('html').attr( 'id', "collections-sports-cards" );
   let darksideSportsUrl = $(location).attr('href');
   let existingStyles = $("#header_customer_login > button").attr("style");
   const sportsUrlElement = document.getElementsByClassName('header__logo-link sports-cards');
