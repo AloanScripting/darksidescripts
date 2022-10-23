@@ -13,14 +13,18 @@ $( document ).ready(function(){
   let darksideSportsUrl = $(location).attr('href');
   let existingStyles = $("#header_customer_login > button").attr("style");
   const sportsUrlElement = document.getElementsByClassName('header__logo-link sports-cards');
-  if(darksideSportsUrl.indexOf('sports') != -1){
+  if(darksideSportsUrl.indexOf('sports') != -1 ||  ('p.collection-title-aloanscripting:contains("Darkside Sports")').length > 0) 
+  
+  
+  {
     $(".button").removeAttr("style"),
     $(".button").attr('style', 'color:#000000 !important'),
     $('#mc_embed_signup_scroll > div:nth-child(7) > input').css({
       'background' : 'linear-gradient(90deg, rgba(251,211,4,1) 0%, rgba(252,222,63,1) 35%, rgba(255,255,255,1) 100%)', 'color' : '#000000'
     }),
     $('.header__logo-link').attr('href', 'https://darksidegames.com/pages/darkside-sports'), 
-    $('.header__cart-count').css('color','#000000'), $('.header__logo-image').attr('src','https://cdn.discordapp.com/attachments/1016787628370182144/1016787695239970827/Darkside_Sports_Logo-removebg-preview.png'), 
+    $('.header__cart-count').css('color','#000000'), 
+    $('.header__logo-image').attr('src','https://cdn.discordapp.com/attachments/1016787628370182144/1016787695239970827/Darkside_Sports_Logo-removebg-preview.png'), 
     $('.button').css({'background' : 'linear-gradient(90deg, rgba(251,211,4,1) 0%, rgba(252,222,63,1) 35%, rgba(255,255,255,1) 100%)'}),
 
     $('#shopify-section-template--15413602517037__fc0bebeb-c524-4482-8b12-b2e477258643 .button').css({
@@ -28,13 +32,14 @@ $( document ).ready(function(){
     }),
     $('.header__logo-link').attr('href','https://darksidegames.com/pages/darkside-sports'),
     $('#shopify-section-header-3 > section > header > div > div > div.header__action-list > div.header__action-item.header__action-item--account > div > a.header__action-item-link.hidden-pocket.hidden-lap').css('href','https://darksidegames.com/pages/darkside-sports'),
+
     document.documentElement.style.setProperty('--color-primary', '#fbd304');
   }
 })
 
 
 
-//replaced with above
+// replaced with above
 // function changeSportsURL() {
 //   const sportsUrlElement = document.getElementsByClassName('header__logo-link sports-cards');
 //   for (const element of sportsUrlElement) {
@@ -114,7 +119,7 @@ document.querySelectorAll('p.collection-title-aloanscripting').forEach(el => {
     document.documentElement.style.setProperty('--color-primary', '#fbd304');
     //this needs updated, probably best to load a new css file
   const navBarInner =  document.getElementsByClassName(".nav-bar__inner")
-  document.getElementsByTagName('html')[0].setAttribute('id', 'collections-sports-cards')
+  // document.getElementsByTagName('html')[0].setAttribute('id', 'collections-sports-cards')
   
     
   let link = document.querySelector("link[rel*='icon']") || document.createElement('link');
