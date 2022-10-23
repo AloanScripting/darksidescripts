@@ -13,11 +13,11 @@ let darksideSportsUrl = $(location).attr('href');
 // })(jQuery);
 
 
-(function($) {
-  if(darksideSportsUrl.indexOf('sports') != -1 ||  ('p.collection-title-aloanscripting:contains("Darkside Sports")').length > 0) {
-  $('html').attr( 'id', "collections-sports-cards");
-  }
-})(jQuery);
+// (function($) {
+//   if(darksideSportsUrl.indexOf('sports') != -1 ||  ('p.collection-title-aloanscripting:contains("Darkside Sports")').length > 0) {
+//   $('html').attr( 'id', "collections-sports-cards");
+//   }
+// })(jQuery);
 //change store hours if sports
 (function($) {
   if(darksideSportsUrl.indexOf('sports') != -1 ||  ('p.collection-title-aloanscripting:contains("Darkside Sports")').length > 0) {
