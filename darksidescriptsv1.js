@@ -25,8 +25,8 @@
 
 (function($) {
   if($('.collection-title-aloanscripting:contains(Darkside Sports)')) {
-  $('html').attr( 'id', "collections-sports-cards"),
-  elementsSportsSwapper();
+  $('html').attr( 'id', "collections-sports-cards")
+
   }
 })(jQuery);
 
@@ -35,7 +35,7 @@ function elementsSportsSwapper() {
   let darksideSportsUrl = $(location).attr('href');
   let existingStyles = $("#header_customer_login > button").attr("style");
   const sportsUrlElement = document.getElementsByClassName('header__logo-link sports-cards');
-  if(darksideSportsUrl.indexOf('sports') != -1) 
+  if(darksideSportsUrl.indexOf('sports') != -1 || $('p.collection-title-aloanscripting:contains(Darkside Sports)')) 
   
   {
     $(".button").removeAttr("style"),
