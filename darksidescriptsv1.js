@@ -27,7 +27,7 @@ $(document).ready(function() {
 if ($('html').attr('id') == 'collections-sports-cards' ) {
   const sportsURLParamerator = new URL(window.location.href);
   sportsURLParamerator.searchParams.set('aloanscripting-param-setter', 'sports');
-  sportsURLParamerator.searchParams.delete('param2');
+  sportsURLParamerator.searchParams.delete('param1');
   window.history.replaceState(null, null, sportsURLParamerator);
   }
 })
