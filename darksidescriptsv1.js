@@ -24,7 +24,7 @@
 
 
 (function($) {
-  if($('.collection-title-aloanscripting p:contains(Darkside Sports)')) {
+  if($('p.collection-title-aloanscripting:contains(Darkside Sports)')) {
   $('html').attr( 'id', "collections-sports-cards")
 
   }
