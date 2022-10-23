@@ -24,16 +24,13 @@
 
 
 
-
-
-
-
 //element swaps if sports in url
 $(document).ready(function() {
   let darksideSportsUrl = $(location).attr('href');
   let existingStyles = $("#header_customer_login > button").attr("style");
   const sportsUrlElement = document.getElementsByClassName('header__logo-link sports-cards');
-  if(darksideSportsUrl.indexOf('sports') != -1 || $('html').attr( 'id' === "collections-sports-cards"))
+  const dsSportsVendor = document.querySelectorAll('.collection-title-aloanscripting p')
+  if(darksideSportsUrl.indexOf('sports') != -1)
 
   {
     $(".button").removeAttr("style"),
@@ -147,7 +144,7 @@ document.querySelectorAll('p.collection-title-aloanscripting').forEach(el => {
     document.documentElement.style.setProperty('--color-primary', '#fbd304');
     //this needs updated, probably best to load a new css file
   const navBarInner =  document.getElementsByClassName(".nav-bar__inner")
-  // document.getElementsByTagName('html')[0].setAttribute('id', 'collections-sports-cards')
+  document.getElementsByTagName('html')[0].setAttribute('id', 'collections-sports-cards')
   
     
   let link = document.querySelector("link[rel*='icon']") || document.createElement('link');
