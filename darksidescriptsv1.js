@@ -38,7 +38,8 @@ $( document ).ready(function(){
     }),
     $('.header__logo-link').attr('href','https://darksidegames.com/pages/darkside-sports'),
     $('#shopify-section-header-3 > section > header > div > div > div.header__action-list > div.header__action-item.header__action-item--account > div > a.header__action-item-link.hidden-pocket.hidden-lap').css('href','https://darksidegames.com/pages/darkside-sports'),
-
+    $('.link--accented').css('color','#fbd304'), 
+    $('.product__refund-policy-link').css('background','#60fbd304'), 
     document.documentElement.style.setProperty('--color-primary', '#fbd304');
   }
 })
