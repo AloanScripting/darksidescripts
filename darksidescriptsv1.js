@@ -31,7 +31,7 @@ $(document).ready(function() {
   // const sportsUrlElement = document.getElementsByClassName('header__logo-link sports-cards');
   if(darksideSportsUrl.indexOf('sports') != -1)
 
-  {
+  {$("#collections-sports-cards.header__logo-image").removeAttr("src"),
     $(".button").removeAttr("style"),
     $(".button").attr('style', 'color:#000000 !important'),
     $('#mc_embed_signup_scroll > div:nth-child(7) > input').css({
