@@ -33,11 +33,16 @@
 
 //param setter
 $(document).ready(function() {
-if ($('html').attr('id') == 'collections-sports-cards' ) {
   const sportsURLParamerator = new URL(window.location.href);
+if ($('html').attr('id') == 'collections-sports-cards' ) {
+  
   sportsURLParamerator.searchParams.set('aloanscripting-param-setter', 'sports');
   sportsURLParamerator.searchParams.delete('param1');
   window.history.replaceState(null, null, sportsURLParamerator);
+  } else {
+    sportsURLParamerator.searchParams.set('aloanscripting-param-setter', 'default');
+    sportsURLParamerator.searchParams.delete('param1');
+    window.history.replaceState(null, null, sportsURLParamerator);
   }
 })
 
