@@ -58,7 +58,8 @@ $(document).ready(function() {
     }),
     $('.header__logo-link').attr('href','https://darksidegames.com/pages/darkside-sports'),
     $('#shopify-section-header-3 > section > header > div > div > div.header__action-list > div.header__action-item.header__action-item--account > div > a.header__action-item-link.hidden-pocket.hidden-lap').css('href','https://darksidegames.com/pages/darkside-sports'),
-    $('.link--accented').css('color','#fbd304'), 
+    $('.link--accented').css('color','#fbd304'),
+    $('.footer__title').css('color','#fbd304'), 
     $('.product__refund-policy-link').css('background','#60fbd304'), 
     //this changes navigation image. test src below, figure out what darkside wants this to be.
     // $('#desktop-menu-0-2 > div > div > a > div > div > img').attr('src','https://cdn.shopify.com/s/files/1/0375/3587/5117/products/DSC00090_800x.jpg?v=1663208001'),
