@@ -23,13 +23,19 @@
 })(jQuery);
 
 
-
-//element swaps if sports in url
-$(document).ready(function() {
+(function($) {
+if ($('html').attr('id') == 'collections-sports-cards' ) {
   const sportsURLParamerator = new URL(window.location.href);
   sportsURLParamerator.searchParams.set('param1', 'sports');
   sportsURLParamerator.searchParams.delete('param2');
   window.history.replaceState(null, null, sportsURLParamerator);
+  }
+})
+
+
+
+//element swaps if sports in url
+$(document).ready(function() {
   let darksideSportsUrl = $(location).attr('href');
   let existingStyles = $("#header_customer_login > button").attr("style");
   // const sportsUrlElement = document.getElementsByClassName('header__logo-link sports-cards');
