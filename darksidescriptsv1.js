@@ -12,8 +12,22 @@ const  darksideSportsUrl = $(location).attr('href');
   }
 })(jQuery);
 
-(function($){
-  $('#shopify-section-header-3 > section > nav > div > div > div > ul > li:nth-child(3) > a').text('Darkside Sports').attr('href', "/pages/darkside-sports");
+//change store hours if sports
+(function($) {
+  if(darksideSportsUrl.indexOf('sports') != -1 ||  ('p.collection-title-aloanscripting:contains("Darkside Sports")').length > 0) {
+  $('html').attr( 'id', "collections-sports-cards");
+  }
+})(jQuery);
+
+(function($) {
+  if(darksideSportsUrl.indexOf('sports') != -1 ||  ('p.collection-title-aloanscripting:contains("Darkside Sports")').length > 0) {
+
+  }
+  $('#block-42ca0212-5d2d-4cd3-90cb-a1fe57e3e30b > div > div > p').contents().filter(function() {
+    return this.nodeType == 3
+}).each(function(){
+    this.textContent = this.textContent.replace('9AM–9PM','10AM-7PM'),this.textContent = this.textContent.replace('9AM–12AM','10AM-7PM');
+});
 })(jQuery);
 
 $( document ).ready(function(){
@@ -40,6 +54,8 @@ $( document ).ready(function(){
     $('#shopify-section-header-3 > section > header > div > div > div.header__action-list > div.header__action-item.header__action-item--account > div > a.header__action-item-link.hidden-pocket.hidden-lap').css('href','https://darksidegames.com/pages/darkside-sports'),
     $('.link--accented').css('color','#fbd304'), 
     $('.product__refund-policy-link').css('background','#60fbd304'), 
+    //this changes navigation image. test src below, figure out what darkside wants this to be.
+    // $('#desktop-menu-0-2 > div > div > a > div > div > img').attr('src','https://cdn.shopify.com/s/files/1/0375/3587/5117/products/DSC00090_800x.jpg?v=1663208001'),
     document.documentElement.style.setProperty('--color-primary', '#fbd304');
   }
 })
