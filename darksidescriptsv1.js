@@ -23,12 +23,12 @@
 })(jQuery);
 
 
-(function($) {
-  if($('p.collection-title-aloanscripting:contains(Darkside Sports)')) {
-  $('html').attr( 'id', "collections-sports-cards")
+// (function($) {
+//   if(('p.collection-title-aloanscripting:contains(Darkside Sports)')) {
+//   $('html').attr( 'id', "collections-sports-cards")
 
-  }
-})(jQuery);
+//   }
+// })(jQuery);
 
 $(document).ready(function() {
   let darksideSportsUrl = $(location).attr('href');
