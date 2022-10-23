@@ -30,13 +30,12 @@
   }
 })(jQuery);
 
-//element swaps if sports in url
-function elementsSportsSwapper() {
+$(document).ready(function() {
   let darksideSportsUrl = $(location).attr('href');
   let existingStyles = $("#header_customer_login > button").attr("style");
   const sportsUrlElement = document.getElementsByClassName('header__logo-link sports-cards');
-  if(darksideSportsUrl.indexOf('sports') != -1 || $('p.collection-title-aloanscripting',contains('Darkside Sports')))
-  
+  if($('p.collection-title-aloanscripting:contains(Darkside Sports)'))
+
   {
     $(".button").removeAttr("style"),
     $(".button").attr('style', 'color:#000000 !important'),
@@ -65,7 +64,46 @@ function elementsSportsSwapper() {
     }),
     document.documentElement.style.setProperty('--color-primary', '#fbd304');
   }
-}; $(document).ready(elementsSportsSwapper)
+}); 
+
+
+
+//element swaps if sports in url
+$(document).ready(function() {
+  let darksideSportsUrl = $(location).attr('href');
+  let existingStyles = $("#header_customer_login > button").attr("style");
+  const sportsUrlElement = document.getElementsByClassName('header__logo-link sports-cards');
+  if(darksideSportsUrl.indexOf('sports') != -1) 
+
+  {
+    $(".button").removeAttr("style"),
+    $(".button").attr('style', 'color:#000000 !important'),
+    $('#mc_embed_signup_scroll > div:nth-child(7) > input').css({
+      'background' : 'linear-gradient(90deg, rgba(251,211,4,1) 0%, rgba(252,222,63,1) 35%, rgba(255,255,255,1) 100%)', 'color' : '#000000'
+    }),
+    $('.header__logo-link').attr('href', 'https://darksidegames.com/pages/darkside-sports'), 
+    $('.header__cart-count').css('color','#000000'), 
+    $('.header__logo-image').attr('src','https://cdn.discordapp.com/attachments/1016787628370182144/1016787695239970827/Darkside_Sports_Logo-removebg-preview.png'), 
+    $('.button').css({'background' : 'linear-gradient(90deg, rgba(251,211,4,1) 0%, rgba(252,222,63,1) 35%, rgba(255,255,255,1) 100%)'}),
+
+    $('#shopify-section-template--15413602517037__fc0bebeb-c524-4482-8b12-b2e477258643 .button').css({
+      'background' : 'linear-gradient(90deg, rgba(251,211,4,1) 0%, rgba(252,222,63,1) 35%, rgba(255,255,255,1) 100%)', 'color' : '#000000'
+    }),
+    $('.header__logo-link').attr('href','https://darksidegames.com/pages/darkside-sports'),
+    $('#shopify-section-header-3 > section > header > div > div > div.header__action-list > div.header__action-item.header__action-item--account > div > a.header__action-item-link.hidden-pocket.hidden-lap').css('href','https://darksidegames.com/pages/darkside-sports'),
+    $('.link--accented').css('color','#fbd304'), 
+    $('.product__refund-policy-link').css('background','#60fbd304'), 
+    //this changes navigation image. test src below, figure out what darkside wants this to be.
+    // $('#desktop-menu-0-2 > div > div > a > div > div > img').attr('src','https://cdn.shopify.com/s/files/1/0375/3587/5117/products/DSC00090_800x.jpg?v=1663208001'),
+    //change sports time 
+    $('#block-42ca0212-5d2d-4cd3-90cb-a1fe57e3e30b > div > div > p').contents().filter(function() {
+      return this.nodeType == 3
+    }).each(function(){
+      this.textContent = this.textContent.replace('9AM–9PM','10AM-7PM'),this.textContent = this.textContent.replace('9AM–12AM','10AM-7PM');
+    }),
+    document.documentElement.style.setProperty('--color-primary', '#fbd304');
+  }
+}); 
 
 
 
