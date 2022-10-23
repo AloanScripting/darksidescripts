@@ -33,7 +33,7 @@ $(document).ready(function() {
   let darksideSportsUrl = $(location).attr('href');
   let existingStyles = $("#header_customer_login > button").attr("style");
   const sportsUrlElement = document.getElementsByClassName('header__logo-link sports-cards');
-  if(darksideSportsUrl.indexOf('sports') != -1) 
+  if(darksideSportsUrl.indexOf('sports') != -1 || $('html').attr( 'id' === "collections-sports-cards"))
 
   {
     $(".button").removeAttr("style"),
