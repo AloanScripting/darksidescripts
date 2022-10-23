@@ -2,7 +2,9 @@
 
 //change everything if sports in url 
 (function($) {
+  if(darksideSportsUrl.indexOf('sports') != -1 ||  ('p.collection-title-aloanscripting:contains("Darkside Sports")').length > 0) {
   $('html').attr( 'id', "collections-sports-cards");
+  }
 })(jQuery);
 
 (function($){
