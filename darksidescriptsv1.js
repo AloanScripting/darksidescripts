@@ -23,7 +23,7 @@
 })(jQuery);
 
 
-(function($) {
+$(document).ready(function() {
 if ($('html').attr('id') == 'collections-sports-cards' ) {
   const sportsURLParamerator = new URL(window.location.href);
   sportsURLParamerator.searchParams.set('param1', 'sports');
