@@ -5,7 +5,7 @@
 const  darksideSportsUrl = $(location).attr('href');
 
 
-//change everything if sports in url 
+//change HTML ID if sports. this shoots to collection-sports-cards for CSS purposes
 (function($) {
   if(darksideSportsUrl.indexOf('sports') != -1 ||  ('p.collection-title-aloanscripting:contains("Darkside Sports")').length > 0) {
   $('html').attr( 'id', "collections-sports-cards");
@@ -21,15 +21,14 @@ const  darksideSportsUrl = $(location).attr('href');
 
 (function($) {
   if(darksideSportsUrl.indexOf('sports') != -1 ||  ('p.collection-title-aloanscripting:contains("Darkside Sports")').length > 0) {
-
-  }
   $('#block-42ca0212-5d2d-4cd3-90cb-a1fe57e3e30b > div > div > p').contents().filter(function() {
     return this.nodeType == 3
-}).each(function(){
+  }).each(function(){
     this.textContent = this.textContent.replace('9AM–9PM','10AM-7PM'),this.textContent = this.textContent.replace('9AM–12AM','10AM-7PM');
-});
+  })
+};
 })(jQuery);
-
+//element swaps if sports in url
 $( document ).ready(function(){
   let existingStyles = $("#header_customer_login > button").attr("style");
   const sportsUrlElement = document.getElementsByClassName('header__logo-link sports-cards');
