@@ -1,5 +1,10 @@
 //DS Functions
 
+
+
+const  darksideSportsUrl = $(location).attr('href');
+
+
 //change everything if sports in url 
 (function($) {
   if(darksideSportsUrl.indexOf('sports') != -1 ||  ('p.collection-title-aloanscripting:contains("Darkside Sports")').length > 0) {
@@ -12,7 +17,6 @@
 })(jQuery);
 
 $( document ).ready(function(){
-  let darksideSportsUrl = $(location).attr('href');
   let existingStyles = $("#header_customer_login > button").attr("style");
   const sportsUrlElement = document.getElementsByClassName('header__logo-link sports-cards');
   if(darksideSportsUrl.indexOf('sports') != -1 ||  ('p.collection-title-aloanscripting:contains("Darkside Sports")').length > 0) 
