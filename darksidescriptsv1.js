@@ -3,24 +3,35 @@
 
 
 
-let darksideSportsUrl = $(location).attr('href');
+//change Sports cards to Darkside Sports
+(function($){
+  $('#shopify-section-header-3 > section > nav > div > div > div > ul > li:nth-child(3) > a').text('Darkside Sports').attr('href', "/pages/darkside-sports");
+})(jQuery);
+
+
+(function($){
+  $('#mobile-menu > div > div:nth-child(1) > div > ul > li:nth-child(3) > a').text('Darkside Sports').attr('href', "/pages/darkside-sports");
+})(jQuery);
 
 //change HTML ID if sports. this shoots to collection-sports-cards for CSS purposes
 
 (function($) {
+  let darksideSportsUrl = $(location).attr('href');
   if(darksideSportsUrl.indexOf('sports') != -1) {
   $('html').attr( 'id', "collections-sports-cards");
   }
 })(jQuery);
-// change store hours if sports
-$( document ).ready(function() {
-  if(darksideSportsUrl.indexOf('sports') != -1) {
-  
-};
-})
+
+
+(function($) {
+  if($('.collection-title-aloanscripting:contains(Darkside Sports)')) {
+  $('html').attr( 'id', "collections-sports-cards");
+  }
+})(jQuery);
+
 //element swaps if sports in url
 $( document ).ready(function() {
-  
+  let darksideSportsUrl = $(location).attr('href');
   let existingStyles = $("#header_customer_login > button").attr("style");
   const sportsUrlElement = document.getElementsByClassName('header__logo-link sports-cards');
   if(darksideSportsUrl.indexOf('sports') != -1) 
@@ -148,7 +159,7 @@ document.querySelectorAll('p.collection-title-aloanscripting').forEach(el => {
 
   const elements = document.getElementsByClassName('header__logo-link');
     for (const element of elements) {
-        element.href = "https://darksidegames.com/collections/sports-cards";
+        element.href = "https://darksidegames.com/pages/darkside-sports";
       };
     };
   })
