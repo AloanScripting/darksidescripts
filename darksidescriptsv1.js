@@ -23,6 +23,14 @@
 })(jQuery);
 
 
+//search page sports
+(function($) {
+  if($('.productCard__card ').attr('data','Sports')) {
+  $('html').attr( 'id', "collections-sports-cards");
+  }
+})(jQuery);
+
+//param setter
 $(document).ready(function() {
 if ($('html').attr('id') == 'collections-sports-cards' ) {
   const sportsURLParamerator = new URL(window.location.href);
