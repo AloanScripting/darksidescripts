@@ -1,7 +1,22 @@
 //DS Functions
 
-
-
+//hide out of stock on product item page
+$( document ).ready(function() {
+  $(".block-swatch--disabled,.color-swatch--disabled").hide();
+});
+//remove article wording from mobile menu
+$( document ).ready(function() {
+  if ($('.mobile-menu__section > ul > li:nth-child(1) > a:contains("Articles")').length > 0) {
+      $(".mobile-menu__section > ul > li:nth-child(1) > a").hide();
+  }
+})    
+//fix weird white background over header
+$( document ).ready(function() {
+let darksideCurrentUrl = $(location).attr('href');
+  if(darksideCurrentUrl.indexOf('/blogs/') != -1) {
+      $("#pageBackground").css('background', '#1c1d21');
+  }
+})    
 
 //change Sports cards to Darkside Sports
 (function($){
