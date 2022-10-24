@@ -9,23 +9,25 @@ $( document ).ready(function() {
   if ($('.mobile-menu__section > ul > li:nth-child(1) > a:contains("Articles")').length > 0) {
       $(".mobile-menu__section > ul > li:nth-child(1) > a").hide();
   }
-})    
+});;   
 //fix weird white background over header
 $( document ).ready(function() {
 let darksideCurrentUrl = $(location).attr('href');
   if(darksideCurrentUrl.indexOf('/blogs/') != -1) {
       $("#pageBackground").css('background', '#1c1d21');
   }
-})    
+});    
 
 //change Sports cards to Darkside Sports
 (function($){
-  $('#shopify-section-header-3 > section > nav > div > div > div > ul > li:nth-child(3) > a').text('Darkside Sports').attr('href', "/pages/darkside-sports");
+  $('#shopify-section-header-3 > section > nav > div > div > div > ul > li:nth-child(3) > a')
+  .text('Darkside Sports').attr('href', "/pages/darkside-sports");
 })(jQuery);
 
 
 (function($){
-  $('#mobile-menu > div > div:nth-child(1) > div > ul > li:nth-child(3) > a').text('Darkside Sports').attr('href', "/pages/darkside-sports");
+  $('#mobile-menu > div > div:nth-child(1) > div > ul > li:nth-child(3) > a').text('Darkside Sports')
+  .attr('href', "/pages/darkside-sports");
 })(jQuery);
 
 //change HTML ID if sports. this shoots to collection-sports-cards for CSS purposes
