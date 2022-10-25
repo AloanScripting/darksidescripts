@@ -77,9 +77,14 @@ $(document).ready(function() {
     $("#collections-sports-cards.header__logo-image").removeAttr("src"),
     $(".button").removeAttr("style"),
     $(".button").attr('style', 'color:#000000 !important'),
+    $("#bite-78 .btn").removeAttr("style"),
+    $("#bite-78 .btn").attr('style', 'color:#000000 !important; background:radial-gradient(circle, rgba(251,211,4,1) 0%, rgba(251,211,4,1) 65%, rgba(246,246,246,1) 100%) !important'),
+    $("#bite-78 .modal-content").attr('style','background:radial-gradient(circle, rgba(251,211,4,1) 0%, rgba(251,211,4,1) 65%, rgba(246,246,246,1) 100%) !important'),
+    $("#bite-78 .popup-text,.popup-title").attr('style','color:#000000 !important'),
     $('#mc_embed_signup_scroll > div:nth-child(7) > input').css({
       'background' : 'linear-gradient(90deg, rgba(251,211,4,1) 0%, rgba(252,222,63,1) 35%, rgba(255,255,255,1) 100%)', 'color' : '#000000'
     }),
+    $('.empty-state__button').attr('href', 'https://darksidegames.com/pages/darkside-sports'),
     $('.header__logo-link').attr('href', 'https://darksidegames.com/pages/darkside-sports'), 
     $('.header__cart-count').css('color','#000000'), 
     $('.header__logo-image').attr('src','https://cdn.discordapp.com/attachments/1016787628370182144/1016787695239970827/Darkside_Sports_Logo-removebg-preview.png'), 
