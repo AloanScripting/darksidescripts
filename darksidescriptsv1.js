@@ -1,5 +1,14 @@
 //DS Functions
 
+//hide overlapping account pagination
+$(document).ready(function() {
+  let darksideUrlCapture = $(location).attr('href');
+  if(darksideUrlCapture.indexOf('/account') > 0) {
+    $(".pagination__prev,.pagination__next").hide(),
+    $('.pagination__nav-item').attr('style', 'color:#ffffff !important');
+  }
+});
+
 //hide out of stock on product item page
 $( document ).ready(function() {
   $(".block-swatch--disabled,.color-swatch--disabled").hide();
